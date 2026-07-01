@@ -10,7 +10,7 @@ A modern, softer take on Turbo C++ colorscheme for Neovim.
 
 ```lua
 {
-  'rivethorn/turbo-plus.nvim',
+  "rivethorn/turbo-plus.nvim",
   lazy = false,
   priority = 1000,
   config = function()
@@ -40,7 +40,7 @@ return {
 ### packer.nvim
 
 ```lua
-use 'rivethorn/turbo-plus.nvim'
+use "rivethorn/turbo-plus.nvim"
 ```
 
 Then `:colorscheme turbo-plus`.

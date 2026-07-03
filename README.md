@@ -2,7 +2,25 @@
 
 A modern, softer take on Turbo C++ colorscheme for Neovim.
 
-![Turbo-Plus.nvim](./example.png)
+<details>
+  <summary> Gallery (Click to expand) </summary>
+
+##### Rust
+![Rust-Example](./example-rs.png)
+
+##### CPP
+![CPP-Example](./example-cpp.png)
+
+##### TypeScript
+![TS-Example](./example-ts.png)
+
+##### Python
+![Python-Example](./example-py.png)
+
+##### Odin
+![Odin-Example](./example-odin.png)
+  
+</details>
 
 ## Install
 

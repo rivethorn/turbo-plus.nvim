@@ -8,15 +8,19 @@ end
 vim.o.background = "dark"
 vim.g.colors_name = "turbo-plus-classic"
 
+-- Configuration option for background variant
+-- Set vim.g.turbo_plus_classic_use_original_blue = true to use the original blue background
+local use_original_blue = vim.g.turbo_plus_classic_use_original_blue or false
+
 local p = {
 	-- Classic Turbo C++ backgrounds (authentic deep blue)
-	bg = "#000020", -- classic editor bg (deep blue)
-	bg_alt = "#000030", -- sidebar / status / panel
-	bg_menu = "#000040", -- menus / popups
-	bg_line = "#001050", -- cursorline / selections
-	bg_widget = "#001040",
-	bg_select = "#002080", -- selection
-	bg_match = "#00208090",
+	bg = use_original_blue and "#000033" or "#000020", -- original blue: #000033, softer: #000020
+	bg_alt = use_original_blue and "#000044" or "#000030",
+	bg_menu = use_original_blue and "#000055" or "#000040",
+	bg_line = use_original_blue and "#001155" or "#001050",
+	bg_widget = use_original_blue and "#001144" or "#001040",
+	bg_select = use_original_blue and "#002288" or "#002080",
+	bg_match = use_original_blue and "#00228890" or "#00208090",
 	border = "#0000AA",
 	border_alt = "#0000CC",
 

@@ -10,17 +10,17 @@ set background=dark
 let g:colors_name = "turbo-plus-classic"
 
 " Configuration option for background variant
-" Set g:turbo_plus_classic_use_original_blue = 1 to use the original blue background
+" Set g:turbo_plus_classic_use_original_blue = 1 to use the original saturated blue background
 let s:use_original_blue = get(g:, 'turbo_plus_classic_use_original_blue', 0)
 
-" Color palette (Authentic Turbo C++ colors - deep blue, bright cyan/yellow)
-let s:bg = s:use_original_blue ? "#000033" : "#000020"
-let s:bg_alt = s:use_original_blue ? "#000044" : "#000030"
-let s:bg_menu = s:use_original_blue ? "#000055" : "#000040"
-let s:bg_line = s:use_original_blue ? "#001155" : "#001050"
-let s:bg_widget = s:use_original_blue ? "#001144" : "#001040"
-let s:bg_select = s:use_original_blue ? "#002288" : "#002080"
-let s:bg_match = s:use_original_blue ? "#00228890" : "#00208090"
+" Color palette (Authentic Turbo C++ colors - saturated blue, bright cyan/yellow)
+let s:bg = s:use_original_blue ? "#0000A8" : "#000020"
+let s:bg_alt = s:use_original_blue ? "#0000CC" : "#000030"
+let s:bg_menu = s:use_original_blue ? "#0000D0" : "#000040"
+let s:bg_line = s:use_original_blue ? "#0000BE" : "#001050"
+let s:bg_widget = s:use_original_blue ? "#0000BA" : "#001040"
+let s:bg_select = s:use_original_blue ? "#0000DC" : "#002080"
+let s:bg_match = s:use_original_blue ? "#0000DC90" : "#00208090"
 let s:border = "#0000AA"
 let s:border_alt = "#0000CC"
 

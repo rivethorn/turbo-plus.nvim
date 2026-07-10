@@ -32,7 +32,7 @@ vim.cmd.colorscheme("turbo-plus")
 ```
 
 ### Turbo-Plus-Classic
-A faithful recreation of the original Turbo C++ application's colors with enhanced syntax highlighting. Features the authentic deep blue background (#000020), bright cyan (#00FFFF), and yellow (#FFFF00) accent colors.
+A faithful recreation of the original Turbo C++ application's colors with enhanced syntax highlighting. Features the authentic saturated blue background (#0000A8), bright cyan (#00FFFF), and yellow (#FFFF00) accent colors.
 
 ```lua
 vim.cmd.colorscheme("turbo-plus-classic")
@@ -40,7 +40,7 @@ vim.cmd.colorscheme("turbo-plus-classic")
 
 #### Classic Variant Configuration
 
-The classic variant supports an optional configuration to use an even deeper original blue background:
+The classic variant includes a softer default background. To use the original saturated blue background, set the configuration option:
 
 **Neovim (Lua):**
 ```lua
@@ -54,7 +54,7 @@ let g:turbo_plus_classic_use_original_blue = 1
 colorscheme turbo-plus-classic
 ```
 
-When enabled, this option uses the deeper blue background (#000033) with corresponding adjustments to all related background colors for a more authentic Turbo C++ IDE experience.
+When enabled, this option uses the authentic Turbo C++ saturated blue background (#0000A8) with corresponding adjustments to all related background colors.
 
 ## Install
 
@@ -74,7 +74,7 @@ When enabled, this option uses the deeper blue background (#000033) with corresp
     -- Or use turbo-plus-classic for the authentic experience
     -- vim.cmd.colorscheme("turbo-plus-classic")
     
-    -- Optional: use original blue background with classic variant
+    -- Optional: use original saturated blue background with classic variant
     -- vim.g.turbo_plus_classic_use_original_blue = true
     -- vim.cmd.colorscheme("turbo-plus-classic")
   end,
@@ -121,7 +121,7 @@ Then add to your `.vimrc`:
 colorscheme turbo-plus
 " or
 colorscheme turbo-plus-classic
-" optional: for deeper original blue background
+" optional: for original saturated blue background
 let g:turbo_plus_classic_use_original_blue = 1
 ```
 

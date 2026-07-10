@@ -32,7 +32,7 @@ vim.cmd.colorscheme("turbo-plus")
 ```
 
 ### Turbo-Plus-Classic
-A faithful recreation of the original Turbo C++ application's colors with enhanced syntax highlighting. Features the authentic deep blue background (#000020), bright cyan (#00FFFF), and yellow (#FFFF00) keywords that defined the classic IDE, now optimized for modern Neovim with improved treesitter support.
+A faithful recreation of the original Turbo C++ application's colors with enhanced syntax highlighting. Features the authentic deep blue background (#000020), bright cyan (#00FFFF), and yellow (#FFFF00) color scheme.
 
 ```lua
 vim.cmd.colorscheme("turbo-plus-classic")
@@ -40,7 +40,9 @@ vim.cmd.colorscheme("turbo-plus-classic")
 
 ## Install
 
-### lazy.nvim
+### Neovim
+
+#### lazy.nvim
 
 ```lua
 {
@@ -57,7 +59,7 @@ vim.cmd.colorscheme("turbo-plus-classic")
 }
 ```
 
-### Lazyvim
+#### Lazyvim
 
 ```lua
 return {
@@ -75,10 +77,62 @@ return {
 }
 ```
 
-### packer.nvim
+#### packer.nvim
 
 ```lua
 use "rivethorn/turbo-plus.nvim"
+```
+
+Then use `:colorscheme turbo-plus` or `:colorscheme turbo-plus-classic`.
+
+### Vim
+
+#### vim-plug
+
+```vim
+Plug 'rivethorn/turbo-plus.nvim'
+```
+
+Then add to your `.vimrc`:
+
+```vim
+colorscheme turbo-plus
+" or
+colorscheme turbo-plus-classic
+```
+
+#### Manual Installation
+
+Copy the colorscheme files to your Vim configuration directory:
+
+**Linux/macOS:**
+```bash
+mkdir -p ~/.vim/colors
+cp colors/turbo-plus.vim ~/.vim/colors/
+cp colors/turbo-plus-classic.vim ~/.vim/colors/
+```
+
+**Windows:**
+```bash
+mkdir %USERPROFILE%\vimfiles\colors
+copy colors\turbo-plus.vim %USERPROFILE%\vimfiles\colors\
+copy colors\turbo-plus-classic.vim %USERPROFILE%\vimfiles\colors\
+```
+
+Then add to your `.vimrc`:
+
+```vim
+colorscheme turbo-plus
+" or
+colorscheme turbo-plus-classic
+```
+
+#### Vundle
+
+Add to your `.vimrc`:
+
+```vim
+Bundle 'rivethorn/turbo-plus.nvim'
 ```
 
 Then use `:colorscheme turbo-plus` or `:colorscheme turbo-plus-classic`.
